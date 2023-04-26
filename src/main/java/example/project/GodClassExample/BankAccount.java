@@ -18,8 +18,18 @@ public class BankAccount {
         return interest;
     }
 
-    public double getBalance() {
-        return balance;
+    // TODO: move this method to BankAccount class
+    public void addInterest() {
+        double interest = this.getInterest();
+        double value = this.getBalance() * interest;
+        this.setBalance(this.getBalance() + value);
+    }
+
+    public double getBalance() {return balance;}
+
+    // TODO: move this method to BankAccount class
+    public double obtainBalance() {
+        return this.getBalance();
     }
 
     public void setBalance(double balance) {

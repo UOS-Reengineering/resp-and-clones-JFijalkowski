@@ -28,8 +28,15 @@ public class Branch {
         this.openingTime = openingTime;
     }
 
+    public void changeOpeningTime(String openingTime) {this.setOpeningTime(openingTime);}
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+
+    // TODO: move this method to Branch class
+    public void registerTelephone(String telephone) {
+        this.setTelephone(telephone);
+    }
+
 
 }
