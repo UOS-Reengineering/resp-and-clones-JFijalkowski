@@ -26,6 +26,7 @@ public class TestExtractMethods {
         String[] outputArray2 = outputArray[1].split("\\s");
 
         // assertions
+        System.out.println(outputArray1);
         assertEquals(10, outputArray1.length);
         assertEquals(10, outputArray2.length);
 

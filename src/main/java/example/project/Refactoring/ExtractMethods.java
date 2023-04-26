@@ -48,17 +48,20 @@ public class ExtractMethods {
         printArrayWithDelimiter(array2, " ");
     }
     public static int[] initialiseArray(int x) {
+
         int[] array = new int[x];
         for (int i = 0; i < array.length; i++){
-            array[i] = (int) Math.random();
+            array[i] = (int) (Math.random() * 10);
         }
         return array;
     }
 
     public static void printArrayWithDelimiter(int[] array, String delimeter){
         for (int i : array){
-            System.out.println(Integer.toString(i) + delimeter);
+            System.out.print(i + delimeter);
         }
+        System.out.println();
     }
+
 
 }
